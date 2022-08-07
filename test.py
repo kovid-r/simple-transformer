@@ -3,11 +3,17 @@ import random
 import argparse
 import collections
 
-f = open('data.json')
+parser = argparse.ArgumentParser(description='Test customer & order data')
+parser.add_argument('--input', help='input JSON filepath')
+parser.add_argument('--output', help='output JSON filepath')
+
+args = parser.parse_args()
+
+f = open(args.input)
 data = json.load(f)
 f.close()
 
-f = open('output.json')
+f = open(args.output)
 output = json.load(f)
 f.close()
 
