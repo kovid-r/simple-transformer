@@ -1,7 +1,7 @@
 # Simple Transformer
 
 ## Project Structure 
- - `requirements.txt` - Use this file to install Python dependencies. Use the following command for installation - `pip3 install -r requirements.txt`
+ - `requirements.txt` - Use this file to install Python dependencies. Created for later use.
  - `transform.py` - Python script with the transformation logic; takes a JSON file as an input and produces another JSON file
  - `test.py` - Python script to perform some basic sanity checks on the original and transformed data
  - `data.json` - Source data to be transformed (storing data in Git is forbidden; this is only for demonstration purposes)
