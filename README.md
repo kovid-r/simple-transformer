@@ -1,7 +1,7 @@
 # Simple Transformer
 
 ## Project Structure 
- - `requirements.txt` - Use this file to install Python dependencies. Use the following command for installation - `pip3 install -r requirements.txt`. Created for later use.
+ - `requirements.txt` - Use this file to install Python dependencies. Use the following command for installation - `pip3 install -r requirements.txt`
  - `transform.py` - Python script with the transformation logic; takes a JSON file as an input and produces another JSON file
  - `test.py` - Python script to perform some basic sanity checks on the original and transformed data
  - `data.json` - Source data to be transformed (storing data in Git is forbidden; this is only for demonstration purposes)
@@ -30,11 +30,13 @@ python transform.py --input data.json --output data-transformed.json
 
 ### Step 3. Run the tests using `test.py`
 
-In this step, you'll perform some basic sanity checks on the transformed data, comparing it with the source data. You'll check:
+In this step, you'll perform sanity checks on the transformed data, comparing it with the source data. You'll check:
 
 * if the number of orders in the input & output are equal
 * if the number of customers in the input & output are equal
 * if a particular customer that exists in the input exists in the output
+* if the basic order details have been correctly transformed in the output
+* if the order item quantity and price have been correctly transformed in the output
 
 To perform these tests, run the `test.py` utility that takes the same two inputs as the previous step:
 
