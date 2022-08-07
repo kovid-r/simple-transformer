@@ -45,3 +45,11 @@ python test.py --input data.json --output data-transformed.json
 ```
 
 The output of the tests will be printed on the console.
+
+## Next Steps
+
+> Currently, this doesn't use any external libraries.
+
+- To create a generic utility that takes in a source and destination JSON schema, validates it, and transforms the data.
+- To handle bigger amounts of data with more structure, use `Pandas` or `PySpark`.
+- Use something like Great Expectations for testing.
